@@ -24,7 +24,7 @@
   "homepage": "https://theREALaltoid.github.io/tests",
   "scripts": {
     "start": "parcel ./public/index.html --host 192.168.1.66",
-    "predeploy": "rm -rf dist && parcel build ./public/index.html",
+    "predeploy": "rm -rf dist && parcel build ./public/index.html --public--url /tests",
     "prebuild": "rm -rf dist",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"
