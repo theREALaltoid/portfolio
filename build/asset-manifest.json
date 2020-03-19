@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/theREALaltoid.github.io/static/css/main.0ef8e32a.chunk.css",
+    "main.js": "/theREALaltoid.github.io/static/js/main.f7b45b12.chunk.js",
+    "main.js.map": "/theREALaltoid.github.io/static/js/main.f7b45b12.chunk.js.map",
+    "runtime-main.js": "/theREALaltoid.github.io/static/js/runtime-main.e7c17144.js",
+    "runtime-main.js.map": "/theREALaltoid.github.io/static/js/runtime-main.e7c17144.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/theREALaltoid.github.io/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.fbd2fce8.chunk.js": "/theREALaltoid.github.io/static/js/2.fbd2fce8.chunk.js",
+    "static/js/2.fbd2fce8.chunk.js.map": "/theREALaltoid.github.io/static/js/2.fbd2fce8.chunk.js.map",
+    "index.html": "/theREALaltoid.github.io/index.html",
+    "precache-manifest.f02e7212be6503049982049de2d40eb2.js": "/theREALaltoid.github.io/precache-manifest.f02e7212be6503049982049de2d40eb2.js",
+    "service-worker.js": "/theREALaltoid.github.io/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/theREALaltoid.github.io/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.0ef8e32a.chunk.css.map": "/theREALaltoid.github.io/static/css/main.0ef8e32a.chunk.css.map",
+    "static/js/2.fbd2fce8.chunk.js.LICENSE.txt": "/theREALaltoid.github.io/static/js/2.fbd2fce8.chunk.js.LICENSE.txt",
+    "static/media/homeStyle.min.css": "/theREALaltoid.github.io/static/media/background.b5678001.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7c17144.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.fbd2fce8.chunk.js",
+    "static/css/main.0ef8e32a.chunk.css",
+    "static/js/main.f7b45b12.chunk.js"
+  ]
+}
