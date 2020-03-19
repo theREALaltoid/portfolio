@@ -21,7 +21,7 @@
     "react-scripts": "3.4.0",
     "reactstrap": "^8.4.1"
   },
-  "homepage": "https://theREALaltoid.github.io/tests",
+  "homepage": "zachcodes.com",
   "scripts": {
     "start": "parcel ./public/index.html --host 192.168.1.66",
     "predeploy": "rm -rf dist && parcel build ./public/index.html",
