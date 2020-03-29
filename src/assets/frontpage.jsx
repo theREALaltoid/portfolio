@@ -1,89 +1,55 @@
 import React, { Component } from "react";
 import "./CSS/homeStyle.min.css";
-import {
-  Container,
-  Row,
-  Col,
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from "reactstrap";
+import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
   faCodepen
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpenText, faBolt } from "@fortawesome/free-solid-svg-icons";
 const currencyPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHomepage.png",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.webp",
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/whiteThemeDash.png",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.webp",
 
-    caption: "s "
+    caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/modal.png",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.webp",
+
+    caption: ""
+  }
+];
+
+const plantrPromoItems = [
+  {
+    src:
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.webp",
+    caption: ""
+  },
+  {
+    src:
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.webp",
+
+    caption: ""
+  },
+  {
+    src:
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.webp",
 
     caption: ""
   }
 ];
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeIndex: 0,
-      animating: false
-    };
-  }
   render() {
-    const next = () => {
-      if (this.state.animating) return;
-      const nextIndex =
-        this.state.activeIndex === currencyPromoItems.length - 1
-          ? 0
-          : this.state.activeIndex + 1;
-      this.setState({ activeIndex: nextIndex });
-    };
-
-    const previous = () => {
-      if (this.state.animating) return;
-      const nextIndex =
-        this.state.activeIndex === 0
-          ? currencyPromoItems.length - 1
-          : this.state.activeIndex - 1;
-      this.setState({ activeIndex: nextIndex });
-    };
-
-    const goToIndex = newIndex => {
-      if (this.state.animating) return;
-      this.setState({ activeIndex: newIndex });
-    };
-
-    const currencyPromoSlides = currencyPromoItems.map(item => {
-      return (
-        <CarouselItem
-          onExiting={() => this.setState({ animating: true })}
-          onExited={() => this.setState({ animating: false })}
-          key={item.src}
-        >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption
-            captionText={item.caption}
-            captionHeader={item.caption}
-          />
-        </CarouselItem>
-      );
-    });
     return (
       <div>
         <div className="homePageUpper">
@@ -91,6 +57,11 @@ export default class App extends Component {
             <Row>
               <Col md="1" lg="1"></Col>
               <Col md="10" lg="10" className="colWithContent">
+                <img
+                  src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.webp"
+                  class="img-responsive"
+                  alt="Muh Face"
+                />
                 <h1>Hello!</h1>
                 <h2>
                   My Name is{" "}
@@ -100,13 +71,22 @@ export default class App extends Component {
                   </b>
                   <br /> I'm a web developer
                 </h2>
-                <h3>Scroll to See More &darr;</h3>
+                <h3 className="glow">Scroll to See More &darr;</h3>
               </Col>
               <Col md="1" lg="1"></Col>
             </Row>
           </Container>
         </div>
         <div className="projects">
+          <h1>
+            Projects{" "}
+            <FontAwesomeIcon
+              className="FontAwesomeIcon"
+              size="1x"
+              icon={faBolt}
+            />
+          </h1>
+
           <Container>
             <Row>
               <Col md="12" lg="7" className="colWithContent">
@@ -115,30 +95,69 @@ export default class App extends Component {
                   Currency is a React Application that allows a user to track
                   the value of their precious metal investments
                 </h3>
+                <Row>
+                  <Col md="6" lg="6">
+                    <ul>
+                      <li>&#9702; React/Redux</li>
+                      <li>&#9702; ExpressJS</li>
+                    </ul>
+                    <Button
+                      color="primary"
+                      href="https://github.com/theREALaltoid/Plantr"
+                    >
+                      View Source{" "}
+                      <FontAwesomeIcon
+                        className="FontAwesomeIcon"
+                        size="1x"
+                        icon={faGithub}
+                      />
+                    </Button>
+                  </Col>
+
+                  <Col md="6" lg="6">
+                    <ul>
+                      <li>&#9702; NodeJS</li>
+                      <li>&#9702; MongooseJS</li>
+                    </ul>
+                  </Col>
+                </Row>
               </Col>
               <Col md="12" lg="5">
-                <Carousel
-                  activeIndex={this.state.activeIndex}
-                  next={next}
-                  previous={previous}
-                >
-                  <CarouselIndicators
-                    items={currencyPromoItems}
-                    activeIndex={this.state.activeIndex}
-                    onClickHandler={goToIndex}
-                  />
-                  {currencyPromoSlides}
-                  <CarouselControl
-                    direction="prev"
-                    directionText="Previous"
-                    onClickHandler={previous}
-                  />
-                  <CarouselControl
-                    direction="next"
-                    directionText="Next"
-                    onClickHandler={next}
-                  />
-                </Carousel>
+                <UncontrolledCarousel items={currencyPromoItems} />
+              </Col>
+            </Row>
+          </Container>
+          <hr />
+          <Container>
+            <Row>
+              <Col md="12" lg="7" className="colWithContent">
+                <h2>Plantr</h2>
+                <h3>
+                  Plantr is a promo site for an app that would allow people to
+                  connect with people in their community, build relationships,
+                  gain access to fresh produce, and reduce their carbon
+                  footprint.
+                </h3>
+                <ul>
+                  <li>&#9702; React/Redux</li>
+                  <li>
+                    <Button
+                      color="primary"
+                      href="https://github.com/theREALaltoid/Plantr"
+                    >
+                      View Source{" "}
+                      <FontAwesomeIcon
+                        className="FontAwesomeIcon"
+                        size="1x"
+                        icon={faGithub}
+                      />
+                    </Button>
+                  </li>
+                </ul>
+              </Col>
+
+              <Col md="12" lg="5">
+                <UncontrolledCarousel items={plantrPromoItems} />
               </Col>
             </Row>
           </Container>
@@ -189,28 +208,28 @@ export default class App extends Component {
                 <a href="https://www.linkedin.com/in/zacharyoronacalvert">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="3x"
+                    size="6x"
                     icon={faLinkedin}
                   />
                 </a>
                 <a href="mailto:zacharycodes@protonmail.com">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="3x"
+                    size="6x"
                     icon={faEnvelopeOpenText}
                   />
                 </a>
                 <a href="https://github.com/theREALaltoid">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="3x"
+                    size="6x"
                     icon={faGithub}
                   />
                 </a>
                 <a href="https://codepen.io/therealAltoid">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="3x"
+                    size="6x"
                     icon={faCodepen}
                   />
                 </a>
