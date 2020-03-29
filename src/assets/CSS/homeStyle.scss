@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Quicksand&display=swap");
 h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
+h3,
+li {
+  font-family: "Quicksand", sans-serif;
 }
 
 .homePageUpper {
-  background-image: url("./background.jpg");
+  background-image: url("./background.webp");
   background-size: cover;
   color: white;
-  height: 100%;
-  width: 100%; //fallback
-  width: 100vw;
   padding: 15% 0 0% 0;
-  text-shadow: 1px 1px grey;
+  text-shadow: 2px 2px black;
   a {
     color: white;
   }
-
   h1 {
     padding: 0% 0 5% 0;
     text-align: center;
@@ -30,26 +27,49 @@ h3 {
     padding-bottom: 20%;
   }
   h3 {
-    font-family: "Montserrat", sans-serif;
     font-size: 2em;
     padding-bottom: 20%;
     text-align: center;
   }
 }
+.projects {
+  background-color: #aec6cf;
+  color: black;
+  padding: 10% 0 10% 0;
+  h1 {
+    text-shadow: 2px 2px #00a4a3;
+    padding: 0% 0 5% 0;
+    text-align: center;
+    font-size: 7em;
+  }
+  h2 {
+    text-shadow: 2px 2px #00a4a3;
+    font-size: 4em;
+  }
+  h3,
+  li {
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.5em;
+  }
+  .slide {
+    padding: 15% 0 15% 0;
+  }
+  .FontAwesomeIcon {
+    filter: drop-shadow(0 0 0.75rem yellow);
+  }
+}
 .homePageMiddleBio {
-  height: 100%;
-  width: 100%; //fallback
-  width: 100vw;
   text-align: center;
   background-color: #ebebf7;
   color: #2e2d2d;
   h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     padding: 3% 0 3% 0;
   }
   h3 {
-    font-size: 2em;
+    font-size: 2.5em;
     padding-bottom: 20%;
     text-align: center;
   }
@@ -61,18 +81,7 @@ h3 {
     }
   }
 }
-.projects {
-  .carousel-item > img {
-    padding: 1%;
-  }
-  padding-top: 10%;
-  h2 {
-    font-size: 4em;
-  }
-  h3 {
-    font-size: 2em;
-  }
-}
+
 @media only screen and (max-width: 1000px) {
   .homePageUpper {
     padding: 50% 0 50% 0;
@@ -90,11 +99,14 @@ h3 {
   .homePageMiddleBio {
     h2 {
       font-size: 4em;
-      padding: 30% 0 30% 0;
+      padding: 10% 0 3% 0;
     }
     h3 {
       font-size: 3em;
       padding-bottom: 20%;
+    }
+    .FontAwesomeIconRow {
+      padding-bottom: 3%;
     }
   }
   .projects {
@@ -106,8 +118,24 @@ h3 {
       font-size: 3em;
       padding-bottom: 15%;
     }
-    .carousel {
-      padding-bottom: 15%;
+    .slide {
+      padding: 5% 0 10% 0;
     }
+  }
+}
+.glow {
+  -webkit-animation: glow 1.4s ease-in-out infinite alternate;
+  -moz-animation: glow 1.4s ease-in-out infinite alternate;
+  animation: glow 1.4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff,
+      0 0 40px #ffff28, 0 0 50px #ffff28, 0 0 60px #ffff28, 0 0 70px #ffff28;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fbee26, 0 0 40px #fbee26,
+      0 0 50px #fbee26, 0 0 60px #fbee26, 0 0 70px #fbee26, 0 0 80px #fbee26;
   }
 }
