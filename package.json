@@ -1,7 +1,8 @@
 {
-  "name": "a",
+  "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "",
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
@@ -15,7 +16,6 @@
     "gh-pages": "^2.2.0",
     "jquery": "1.9.1 - 3",
     "popper.js": "^1.16.0",
-    "portfolio": "^0.1.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
