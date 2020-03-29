@@ -11,18 +11,18 @@ import { faEnvelopeOpenText, faBolt } from "@fortawesome/free-solid-svg-icons";
 const currencyPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.jpg",
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.jpg",
 
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.jpg",
 
     caption: ""
   }
@@ -31,18 +31,18 @@ const currencyPromoItems = [
 const plantrPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.jpg",
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.jpg",
 
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.jgp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.jpg",
 
     caption: ""
   }
@@ -60,7 +60,7 @@ export default class App extends Component {
               <Col md="1" lg="1"></Col>
               <Col md="10" lg="10" className="colWithContent">
                 <img
-                  src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.jgp"
+                  src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.jpg"
                   class="img-responsive"
                   alt="Muh Face"
                 />
@@ -102,11 +102,11 @@ export default class App extends Component {
                     <ul>
                       <li>&#9702; React/Redux</li>
                       <li>&#9702; ExpressJS</li>
-                      <li>&#9702; HTML/CSS</li>
+                      <li>&#9702; HTML/SASS</li>
                       <li>
                         <Button
                           color="primary"
-                          href="https://github.com/theREALaltoid/Plantr"
+                          href="https://github.com/theREALaltoid/cur"
                         >
                           View Source{" "}
                           <FontAwesomeIcon
@@ -145,7 +145,7 @@ export default class App extends Component {
                 </h3>
                 <ul>
                   <li>&#9702; React/Redux</li>
-                  <li>&#9702; HTML/CSS</li>
+                  <li>&#9702; HTML/SASS</li>
 
                   <li>
                     <Button
@@ -181,7 +181,11 @@ export default class App extends Component {
                   when I first edited a configuration file to get more in game
                   credits. Ever since then I have tried to understand how every
                   piece of technology I come into contact with works. I have
-                  been studying front end software technologies for 2+ years.
+                  been studying front end software technologies for 2+ years. I
+                  can quickly learn how to integrate technologies quickly and I
+                  am my happiest when I am in a room with other "techies"
+                  figuring out how to create technological solutions to
+                  complicated problems.
                 </h3>
               </Col>
               <Col md="1" lg="1"></Col>
@@ -193,7 +197,7 @@ export default class App extends Component {
                 <h2>My Skills:</h2>
                 <h3>
                   I understand how to use Git to manage software versioning,
-                  React/Redux and HTML/CSS to create clean and appealing
+                  React/Redux and HTML/SASS to create clean and appealing
                   websites and, MongoDB, Express.js and Node.js to create
                   powerful data management systems and backend services.
                 </h3>
