@@ -1,34 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap");
-body,
-html {
-  height: 100%;
-  margin: 0;
-  background-image: url("./background.jpg");
-  background-size: cover;
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .homePageUpper {
+  background-image: url("./background.jpg");
+  background-size: cover;
   color: white;
   height: 100%;
-  padding-bottom: 5%;
-
+  width: 100%; //fallback
+  width: 100vw;
+  padding: 15% 0 0% 0;
+  text-shadow: 1px 1px grey;
   a {
     color: white;
   }
 
   h1 {
-    padding: 10% 0 5% 0;
+    padding: 0% 0 5% 0;
     text-align: center;
-    font-size: 6em;
+    font-size: 7em;
     font-family: "Pacifico", cursive;
   }
   h2 {
     text-align: center;
+    font-size: 3em;
     padding-top: 3%;
+    padding-bottom: 20%;
   }
   h3 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.7em;
+    font-size: 2em;
+    padding-bottom: 20%;
+    text-align: center;
+  }
+}
+.homePageMiddleBio {
+  height: 100%;
+  width: 100%; //fallback
+  width: 100vw;
+  text-align: center;
+  background-color: #ebebf7;
+  color: #2e2d2d;
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    padding: 3% 0 3% 0;
+  }
+  h3 {
+    font-size: 2em;
+    padding-bottom: 20%;
+    text-align: center;
   }
   .FontAwesomeIconGroup {
     text-align: center;
@@ -37,9 +60,54 @@ html {
       padding: 1%;
     }
   }
-  .FontAwesomeIconRow {
+}
+.projects {
+  .carousel-item > img {
+    padding: 1%;
   }
-  .colWithContent {
-    background-color: rgba(176, 188, 177, 0.6);
+  padding-top: 10%;
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .homePageUpper {
+    padding: 50% 0 50% 0;
+    h1 {
+      font-size: 14em;
+    }
+    h2 {
+      font-size: 4em;
+      padding: 9% 0 50% 0;
+    }
+    h3 {
+      font-size: 4em;
+    }
+  }
+  .homePageMiddleBio {
+    h2 {
+      font-size: 4em;
+      padding: 30% 0 30% 0;
+    }
+    h3 {
+      font-size: 3em;
+      padding-bottom: 20%;
+    }
+  }
+  .projects {
+    padding-top: 10%;
+    h2 {
+      font-size: 4em;
+    }
+    h3 {
+      font-size: 3em;
+      padding-bottom: 15%;
+    }
+    .carousel {
+      padding-bottom: 15%;
+    }
   }
 }
