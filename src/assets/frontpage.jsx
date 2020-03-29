@@ -103,29 +103,27 @@ export default class App extends Component {
                       <li>&#9702; React/Redux</li>
                       <li>&#9702; ExpressJS</li>
                       <li>&#9702; HTML/SASS</li>
-                      <li>
-                        <Button
-                          color="primary"
-                          href="https://github.com/theREALaltoid/cur"
-                        >
-                          View Source{" "}
-                          <FontAwesomeIcon
-                            className="FontAwesomeIcon"
-                            size="1x"
-                            icon={faGithub}
-                          />
-                        </Button>
-                      </li>
-                    </ul>
-                  </Col>
-
-                  <Col md="12" lg="6">
-                    <ul>
-                      <li>&#9702; NodeJS</li>
-                      <li>&#9702; MongooseJS</li>
                     </ul>
                   </Col>
                 </Row>
+              </Col>
+              <Col md="12" lg="6">
+                <ul>
+                  <li>&#9702; NodeJS</li>
+                  <li>&#9702; MongooseJS</li>
+                </ul>
+
+                <Button
+                  color="primary"
+                  href="https://github.com/theREALaltoid/cur"
+                >
+                  View Source{" "}
+                  <FontAwesomeIcon
+                    className="FontAwesomeIcon"
+                    size="1x"
+                    icon={faGithub}
+                  />
+                </Button>
               </Col>
               <Col md="12" lg="5">
                 <UncontrolledCarousel items={currencyPromoItems} />
