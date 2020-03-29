@@ -6,7 +6,7 @@ li {
 }
 
 .homePageUpper {
-  background-image: url("./background.webp");
+  background-image: url("../images/backgroundOne.jpg");
   background-size: cover;
   color: white;
   padding: 5% 0 0% 0;
@@ -89,42 +89,37 @@ li {
 
 @media only screen and (max-width: 1000px) {
   .homePageUpper {
-    padding: 50% 0 50% 0;
+    background-image: url("../images/backgroundTwo.jpg");
+
     h1 {
-      font-size: 14em;
+      font-size: 4em;
+    }
+    h3,
+    h2 {
+      font-size: 3em;
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 5em;
     }
     h2 {
-      font-size: 4em;
-      padding: 9% 0 50% 0;
+      font-size: 3em;
     }
-    h3 {
-      font-size: 4em;
+    h3,
+    li {
+      font-size: 2em;
     }
   }
   .homePageMiddleBio {
     h2 {
-      font-size: 4em;
-      padding: 10% 0 3% 0;
+      font-size: 3em;
     }
     h3 {
-      font-size: 3em;
-      padding-bottom: 20%;
+      font-size: 1.5em;
     }
     .FontAwesomeIconRow {
       padding-bottom: 3%;
-    }
-  }
-  .projects {
-    padding-top: 10%;
-    h2 {
-      font-size: 4em;
-    }
-    h3 {
-      font-size: 3em;
-      padding-bottom: 15%;
-    }
-    .slide {
-      padding: 5% 0 10% 0;
     }
   }
 }

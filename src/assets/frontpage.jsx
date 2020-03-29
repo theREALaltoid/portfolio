@@ -11,18 +11,18 @@ import { faEnvelopeOpenText, faBolt } from "@fortawesome/free-solid-svg-icons";
 const currencyPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.jgp",
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.jgp",
 
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.jgp",
 
     caption: ""
   }
@@ -31,18 +31,18 @@ const currencyPromoItems = [
 const plantrPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.jgp",
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.jgp",
 
     caption: ""
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.webp",
+      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.jgp",
 
     caption: ""
   }
@@ -52,13 +52,15 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <div className="homePageUpper">
           <Container>
             <Row>
               <Col md="1" lg="1"></Col>
               <Col md="10" lg="10" className="colWithContent">
                 <img
-                  src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.webp"
+                  src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.jgp"
                   class="img-responsive"
                   alt="Muh Face"
                 />
@@ -96,25 +98,28 @@ export default class App extends Component {
                   the value of their precious metal investments
                 </h3>
                 <Row>
-                  <Col md="6" lg="6">
+                  <Col md="12" lg="6">
                     <ul>
                       <li>&#9702; React/Redux</li>
                       <li>&#9702; ExpressJS</li>
+                      <li>&#9702; HTML/CSS</li>
+                      <li>
+                        <Button
+                          color="primary"
+                          href="https://github.com/theREALaltoid/Plantr"
+                        >
+                          View Source{" "}
+                          <FontAwesomeIcon
+                            className="FontAwesomeIcon"
+                            size="1x"
+                            icon={faGithub}
+                          />
+                        </Button>
+                      </li>
                     </ul>
-                    <Button
-                      color="primary"
-                      href="https://github.com/theREALaltoid/Plantr"
-                    >
-                      View Source{" "}
-                      <FontAwesomeIcon
-                        className="FontAwesomeIcon"
-                        size="1x"
-                        icon={faGithub}
-                      />
-                    </Button>
                   </Col>
 
-                  <Col md="6" lg="6">
+                  <Col md="12" lg="6">
                     <ul>
                       <li>&#9702; NodeJS</li>
                       <li>&#9702; MongooseJS</li>
@@ -140,6 +145,8 @@ export default class App extends Component {
                 </h3>
                 <ul>
                   <li>&#9702; React/Redux</li>
+                  <li>&#9702; HTML/CSS</li>
+
                   <li>
                     <Button
                       color="primary"
@@ -170,10 +177,11 @@ export default class App extends Component {
               <Col md="10" lg="10" className="colWithContent">
                 <h2>A Bit About Me:</h2>
                 <h3>
-                  I am currently looking for a start in the web development
-                  industry. My happy place is being in a room with other
-                  "techies" figuring out how to create technological solutions
-                  to complicated problems.
+                  Technology has been my passion since I was young, it started
+                  when I first edited a configuration file to get more in game
+                  credits. Ever since then I have tried to understand how every
+                  piece of technology I come into contact with works. I have
+                  been studying front end software technologies for 2+ years.
                 </h3>
               </Col>
               <Col md="1" lg="1"></Col>
@@ -185,9 +193,9 @@ export default class App extends Component {
                 <h2>My Skills:</h2>
                 <h3>
                   I understand how to use Git to manage software versioning,
-                  React to create clean and appealing websites and MongoDB,
-                  Express.js and Node.js to create powerful data management
-                  systems and backend services.
+                  React/Redux and HTML/CSS to create clean and appealing
+                  websites and, MongoDB, Express.js and Node.js to create
+                  powerful data management systems and backend services.
                 </h3>
               </Col>
               <Col md="1" lg="1"></Col>
@@ -208,28 +216,28 @@ export default class App extends Component {
                 <a href="https://www.linkedin.com/in/zacharyoronacalvert">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="6x"
+                    size="3x"
                     icon={faLinkedin}
                   />
                 </a>
                 <a href="mailto:zacharycodes@protonmail.com">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="6x"
+                    size="3x"
                     icon={faEnvelopeOpenText}
                   />
                 </a>
                 <a href="https://github.com/theREALaltoid">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="6x"
+                    size="3x"
                     icon={faGithub}
                   />
                 </a>
                 <a href="https://codepen.io/therealAltoid">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
-                    size="6x"
+                    size="3x"
                     icon={faCodepen}
                   />
                 </a>
