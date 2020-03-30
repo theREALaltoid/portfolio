@@ -58,7 +58,7 @@ export default class App extends Component {
           <Container>
             <Row>
               <Col md="1" lg="1"></Col>
-              <Col md="10" lg="10" className="colWithContent">
+              <Col md="10" lg="10">
                 <img
                   src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.jpg"
                   class="img-responsive"
@@ -91,7 +91,7 @@ export default class App extends Component {
 
           <Container>
             <Row>
-              <Col md="12" lg="7" className="colWithContent">
+              <Col md="12" lg="6">
                 <h2>Currency</h2>
                 <h3>
                   Currency is a React Application that allows a user to track
@@ -105,13 +105,13 @@ export default class App extends Component {
                       <li>&#9702; HTML/SASS</li>
                     </ul>
                   </Col>
+                  <Col md="12" lg="6">
+                    <ul>
+                      <li>&#9702; NodeJS</li>
+                      <li>&#9702; MongooseJS</li>
+                    </ul>
+                  </Col>
                 </Row>
-              </Col>
-              <Col md="12" lg="6">
-                <ul>
-                  <li>&#9702; NodeJS</li>
-                  <li>&#9702; MongooseJS</li>
-                </ul>
 
                 <Button
                   color="primary"
@@ -125,7 +125,7 @@ export default class App extends Component {
                   />
                 </Button>
               </Col>
-              <Col md="12" lg="5">
+              <Col md="12" lg="6">
                 <UncontrolledCarousel items={currencyPromoItems} />
               </Col>
             </Row>
@@ -133,7 +133,7 @@ export default class App extends Component {
           <hr />
           <Container>
             <Row>
-              <Col md="12" lg="7" className="colWithContent">
+              <Col md="12" lg="6">
                 <h2>Plantr</h2>
                 <h3>
                   Plantr is a promo site for an app that would allow people to
@@ -161,7 +161,7 @@ export default class App extends Component {
                 </ul>
               </Col>
 
-              <Col md="12" lg="5">
+              <Col md="12" lg="6">
                 <UncontrolledCarousel items={plantrPromoItems} />
               </Col>
             </Row>
@@ -172,7 +172,7 @@ export default class App extends Component {
             <br />
             <Row>
               <Col md="1" lg="1"></Col>
-              <Col md="10" lg="10" className="colWithContent">
+              <Col md="10" lg="10">
                 <h2>A Bit About Me:</h2>
                 <h3>
                   Technology has been my passion since I was young, it started
@@ -191,7 +191,7 @@ export default class App extends Component {
             <br />
             <Row>
               <Col md="1" lg="1"></Col>
-              <Col md="10" lg="10" className="colWithContent">
+              <Col md="10" lg="10">
                 <h2>My Skills:</h2>
                 <h3>
                   I understand how to use Git to manage software versioning,
@@ -209,11 +209,7 @@ export default class App extends Component {
           <Container>
             <Row className="FontAwesomeIconRow">
               <Col md="1" lg="3"></Col>
-              <Col
-                md="10"
-                lg="6"
-                className="colWithContent FontAwesomeIconGroup"
-              >
+              <Col md="10" lg="6" className=" FontAwesomeIconGroup">
                 <h2>My Contacts:</h2>
                 <a href="https://www.linkedin.com/in/zacharyoronacalvert">
                   <FontAwesomeIcon
