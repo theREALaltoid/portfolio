@@ -1,52 +1,55 @@
-import React, { Component } from "react";
-import "./CSS/homeStyle.min.css";
-import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { Component } from 'react';
+import './CSS/homeStyle.min.css';
+import {
+  Button, Container, Row, Col, UncontrolledCarousel,
+} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
   faCodepen,
-  faMedium
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeOpenText, faBolt } from "@fortawesome/free-solid-svg-icons";
+  faMedium,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeOpenText, faBolt } from '@fortawesome/free-solid-svg-icons';
+
 const currencyPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.jpg",
-    caption: ""
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyHome.jpg',
+    caption: '',
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.jpg",
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyDashboard.jpg',
 
-    caption: ""
+    caption: '',
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.jpg",
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/currencyModal.jpg',
 
-    caption: ""
-  }
+    caption: '',
+  },
 ];
 
 const plantrPromoItems = [
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.jpg",
-    caption: ""
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHome.jpg',
+    caption: '',
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.jpg",
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrHomepage2.jpg',
 
-    caption: ""
+    caption: '',
   },
   {
     src:
-      "https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.jpg",
+      'https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/plantrPageTwo.jpg',
 
-    caption: ""
-  }
+    caption: '',
+  },
 ];
 
 export default class App extends Component {
@@ -58,31 +61,37 @@ export default class App extends Component {
         <div className="homePageUpper">
           <Container>
             <Row>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
               <Col md="10" lg="10">
                 <img
                   src="https://raw.githubusercontent.com/theREALaltoid/portfolio/master/public/images/muhface.jpg"
-                  class="img-responsive"
+                  className="img-responsive"
                   alt="Muh Face"
                 />
                 <h1>Hello!</h1>
                 <h2>
-                  My Name is{" "}
+                  My Name is
+                  {' '}
                   <b>
                     Zachary
-                    <br /> Orona-Calvert.
+                    <br />
+                    {' '}
+Orona-Calvert.
                   </b>
-                  <br /> I'm a web developer
+                  <br />
+                  {' '}
+I`&apos;`m a web developer
                 </h2>
                 <h3 className="glow">Scroll to See More &darr;</h3>
               </Col>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
             </Row>
           </Container>
         </div>
         <div className="projects">
           <h1>
-            Projects{" "}
+            Projects
+            {' '}
             <FontAwesomeIcon
               className="FontAwesomeIcon"
               size="1x"
@@ -118,7 +127,8 @@ export default class App extends Component {
                   color="primary"
                   href="https://github.com/theREALaltoid/cur"
                 >
-                  View Source{" "}
+                  View Source
+                  {' '}
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="1x"
@@ -151,7 +161,8 @@ export default class App extends Component {
                       color="primary"
                       href="https://github.com/theREALaltoid/Plantr"
                     >
-                      View Source{" "}
+                      View Source
+                      {' '}
                       <FontAwesomeIcon
                         className="FontAwesomeIcon"
                         size="1x"
@@ -172,7 +183,7 @@ export default class App extends Component {
           <Container>
             <br />
             <Row>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
               <Col md="10" lg="10">
                 <h2>A Bit About Me:</h2>
                 <h3>
@@ -182,16 +193,16 @@ export default class App extends Component {
                   piece of technology I come into contact with works. I have
                   been studying front end software technologies for 2+ years. I
                   can quickly learn how to integrate technologies quickly and I
-                  am my happiest when I am in a room with other "techies"
+                  am my happiest when I am in a room with other `&quot;`techies`&quot;`
                   figuring out how to create technological solutions to
                   complicated problems.
                 </h3>
               </Col>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
             </Row>
             <br />
             <Row>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
               <Col md="10" lg="10">
                 <h2>My Skills:</h2>
                 <h3>
@@ -201,7 +212,7 @@ export default class App extends Component {
                   powerful data management systems and backend services.
                 </h3>
               </Col>
-              <Col md="1" lg="1"></Col>
+              <Col md="1" lg="1" />
             </Row>
           </Container>
         </div>
@@ -209,7 +220,7 @@ export default class App extends Component {
         <div className="homePageMiddleBio">
           <Container>
             <Row className="FontAwesomeIconRow">
-              <Col md="1" lg="3"></Col>
+              <Col md="1" lg="3" />
               <Col md="10" lg="6" className=" FontAwesomeIconGroup">
                 <h2>My Contacts:</h2>
                 <a href="https://www.linkedin.com/in/zacharyoronacalvert" rel="noopener noreferrer" target="_blank">
@@ -248,7 +259,7 @@ export default class App extends Component {
                   />
                 </a>
               </Col>
-              <Col md="1" lg="3"></Col>
+              <Col md="1" lg="3" />
             </Row>
           </Container>
         </div>

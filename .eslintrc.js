@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+            "prettier",
+            "airbnb"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -22,5 +23,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+      "react/prefer-stateless-function": [0]
     }
 };
