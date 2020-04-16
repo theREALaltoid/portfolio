@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './CSS/homeStyle.min.css';
 import {
-  Button, Container, Row, Col, UncontrolledCarousel,
+  Button,
+  Container,
+  Row,
+  Col,
+  UncontrolledCarousel,
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -10,7 +14,10 @@ import {
   faCodepen,
   faMedium,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeOpenText, faBolt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelopeOpenText,
+  faBolt,
+} from '@fortawesome/free-solid-svg-icons';
 
 const currencyPromoItems = [
   {
@@ -56,7 +63,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
 
         <div className="homePageUpper">
           <Container>
@@ -73,14 +83,12 @@ export default class App extends Component {
                   My Name is
                   {' '}
                   <b>
-                    Zachary
+                    Zachary Orona-Calvert.
                     <br />
-                    {' '}
-Orona-Calvert.
                   </b>
                   <br />
                   {' '}
-I`&apos;`m a web developer
+I&apos;m a web developer
                 </h2>
                 <h3 className="glow">Scroll to See More &darr;</h3>
               </Col>
@@ -104,8 +112,9 @@ I`&apos;`m a web developer
               <Col md="12" lg="6">
                 <h2>Currency</h2>
                 <h3>
-                  Currency is a React Application that allows a user to track
-                  the value of their precious metal investments
+                  Currency is a React Application that allows a user
+                  to track the value of their precious metal
+                  investments
                 </h3>
                 <Row>
                   <Col md="12" lg="6">
@@ -147,10 +156,10 @@ I`&apos;`m a web developer
               <Col md="12" lg="6">
                 <h2>Plantr</h2>
                 <h3>
-                  Plantr is a promo site for an app that would allow people to
-                  connect with people in their community, build relationships,
-                  gain access to fresh produce, and reduce their carbon
-                  footprint.
+                  Plantr is a promo site for an app that would allow
+                  people to connect with people in their community,
+                  build relationships, gain access to fresh produce,
+                  and reduce their carbon footprint.
                 </h3>
                 <ul>
                   <li>&#9702; React/Redux</li>
@@ -187,15 +196,16 @@ I`&apos;`m a web developer
               <Col md="10" lg="10">
                 <h2>A Bit About Me:</h2>
                 <h3>
-                  Technology has been my passion since I was young, it started
-                  when I first edited a configuration file to get more in game
-                  credits. Ever since then I have tried to understand how every
-                  piece of technology I come into contact with works. I have
-                  been studying front end software technologies for 2+ years. I
-                  can quickly learn how to integrate technologies quickly and I
-                  am my happiest when I am in a room with other `&quot;`techies`&quot;`
-                  figuring out how to create technological solutions to
-                  complicated problems.
+                  Technology has been my passion since I was young, it
+                  started when I first edited a configuration file to
+                  get more in game credits. Ever since then I have
+                  tried to understand how every piece of technology I
+                  come into contact with works. I have been studying
+                  front end software technologies for 2+ years. I can
+                  quickly learn how to integrate technologies quickly
+                  and I am my happiest when I am in a room with other
+                  &quot;techies&quot; figuring out how to create
+                  technological solutions to complicated problems.
                 </h3>
               </Col>
               <Col md="1" lg="1" />
@@ -206,10 +216,11 @@ I`&apos;`m a web developer
               <Col md="10" lg="10">
                 <h2>My Skills:</h2>
                 <h3>
-                  I understand how to use Git to manage software versioning,
-                  React/Redux and HTML/SASS to create clean and appealing
-                  websites and, MongoDB, Express.js and Node.js to create
-                  powerful data management systems and backend services.
+                  I understand how to use Git to manage software
+                  versioning, React/Redux and HTML/SASS to create
+                  clean and appealing websites and, MongoDB,
+                  Express.js and Node.js to create powerful data
+                  management systems and backend services.
                 </h3>
               </Col>
               <Col md="1" lg="1" />
@@ -223,7 +234,11 @@ I`&apos;`m a web developer
               <Col md="1" lg="3" />
               <Col md="10" lg="6" className=" FontAwesomeIconGroup">
                 <h2>My Contacts:</h2>
-                <a href="https://www.linkedin.com/in/zacharyoronacalvert" rel="noopener noreferrer" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/zacharyoronacalvert"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
@@ -237,21 +252,33 @@ I`&apos;`m a web developer
                     icon={faEnvelopeOpenText}
                   />
                 </a>
-                <a href="https://github.com/theREALaltoid" rel="noopener noreferrer" target="_blank">
+                <a
+                  href="https://github.com/theREALaltoid"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
                     icon={faGithub}
                   />
                 </a>
-                <a href="https://codepen.io/therealAltoid" rel="noopener noreferrer" target="_blank">
+                <a
+                  href="https://codepen.io/therealAltoid"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
                     icon={faCodepen}
                   />
                 </a>
-                <a href="https://medium.com/@zacharyoronacalvert" rel="noopener noreferrer" target="_blank">
+                <a
+                  href="https://medium.com/@zacharyoronacalvert"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
