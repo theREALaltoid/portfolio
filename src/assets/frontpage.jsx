@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faCodepen
+  faCodepen,
+  faMedium
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpenText, faBolt } from "@fortawesome/free-solid-svg-icons";
 const currencyPromoItems = [
@@ -211,7 +212,7 @@ export default class App extends Component {
               <Col md="1" lg="3"></Col>
               <Col md="10" lg="6" className=" FontAwesomeIconGroup">
                 <h2>My Contacts:</h2>
-                <a href="https://www.linkedin.com/in/zacharyoronacalvert">
+                <a href="https://www.linkedin.com/in/zacharyoronacalvert" rel="noopener noreferrer" target="_blank">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
@@ -225,18 +226,25 @@ export default class App extends Component {
                     icon={faEnvelopeOpenText}
                   />
                 </a>
-                <a href="https://github.com/theREALaltoid">
+                <a href="https://github.com/theREALaltoid" rel="noopener noreferrer" target="_blank">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
                     icon={faGithub}
                   />
                 </a>
-                <a href="https://codepen.io/therealAltoid">
+                <a href="https://codepen.io/therealAltoid" rel="noopener noreferrer" target="_blank">
                   <FontAwesomeIcon
                     className="FontAwesomeIcon"
                     size="3x"
                     icon={faCodepen}
+                  />
+                </a>
+                <a href="https://medium.com/@zacharyoronacalvert" rel="noopener noreferrer" target="_blank">
+                  <FontAwesomeIcon
+                    className="FontAwesomeIcon"
+                    size="3x"
+                    icon={faMedium}
                   />
                 </a>
               </Col>
