@@ -185,7 +185,48 @@ I&apos;m a web developer
               <Col md="12" lg="6">
                 <UncontrolledCarousel items={plantrPromoItems} />
               </Col>
+              <br />
             </Row>
+          </Container>
+          <Container>
+            <h2>Medium Writer</h2>
+            <ul>
+              <li>&#9702;Currated by Editors of Medium</li>
+              <li>
+                &#9702;Articles Published by
+                {' '}
+                <a
+                  href="https://medium.com/better-programming
+"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Better Programming
+                </a>
+                {' '}
+                & The Largest Active Medium Publication,
+                {' '}
+                <a
+                  href="https://medium.com/swlh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Startup
+                </a>
+              </li>
+            </ul>
+            <Button
+              color="primary"
+              href="https://medium.com/@zacharyoronacalvert"
+            >
+              View Profile
+              {' '}
+              <FontAwesomeIcon
+                className="FontAwesomeIcon"
+                size="1x"
+                icon={faMedium}
+              />
+            </Button>
           </Container>
         </div>
         <div className="homePageMiddleBio">
