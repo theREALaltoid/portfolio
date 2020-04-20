@@ -217,7 +217,7 @@ I&apos;m a web developer
                       Better Programming
                     </a>
                     {' '}
-                    & The Largest Medium Publisher,
+                    & The Largest Active Medium Publisher,
                     {' '}
                     <a
                       href="https://medium.com/swlh"
