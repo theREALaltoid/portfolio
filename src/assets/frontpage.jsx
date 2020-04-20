@@ -189,30 +189,45 @@ I&apos;m a web developer
             </Row>
           </Container>
           <Container>
-            <h2>Medium Writer</h2>
+            <h2> Medium Writer</h2>
             <ul>
-              <li>&#9702;Currated by Editors of Medium</li>
               <li>
-                &#9702;Articles Published by
                 {' '}
-                <a
-                  href="https://medium.com/better-programming
+                <Row>
+                  &#9702;
+                  <Col md="12" lg="7">
+                    {' '}
+                    Currated by Editors of Medium
+                  </Col>
+                </Row>
+              </li>
+
+              <li>
+                <Row>
+                  &#9702;
+                  <Col md="12" lg="7">
+                    Published by
+                    {' '}
+                    <a
+                      href="https://medium.com/better-programming
 "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Better Programming
-                </a>
-                {' '}
-                & The Largest Active Medium Publication,
-                {' '}
-                <a
-                  href="https://medium.com/swlh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Startup
-                </a>
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Better Programming
+                    </a>
+                    {' '}
+                    & The Largest Medium Publisher,
+                    {' '}
+                    <a
+                      href="https://medium.com/swlh"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      The Startup
+                    </a>
+                  </Col>
+                </Row>
               </li>
             </ul>
             <Button
